@@ -1,0 +1,260 @@
+*{
+    box-sizing: borderbox;
+    margin: 0 auto;
+  }
+html {
+    scroll-behavior: smooth;
+  }
+  @font-face {
+    font-family: Dealoras;
+    src: url(img/Dealoras-Rp6zo.ttf); /* Adjust the file path and format as necessary */
+  }
+  @font-face {
+    font-family: font-2;
+    src: url(img/PlayfairDisplayBold-nRv8g.ttf)
+  }
+  @font-face {
+    font-family: font-3;
+    src: url(img/Parisienne-ymRq.ttf)
+  }
+  body{
+    background-color: #FCC8D1;
+  }
+  #music-controls {
+    text-align: left; /* Align the button in the center horizontally */
+    margin-bottom: -20px; /* Add some spacing below the button */
+    margin-top: 65px;
+  }
+  #buttonImage{
+    width: 20px;
+    height: auto;
+    position: relative;
+    margin-bottom: 0;
+    z-index: 9999;
+
+  }
+  #play-button {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #play-button i{
+    color: #555555;
+    font-size: 20px;
+  }
+  #play-button:hover {
+    background-color: transparent; /* Change the background color on hover */
+  }
+.header-content {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+  }
+  #nav-bar{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-right: 0;
+    padding-left: 0%;
+  }
+  .nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    
+  }
+  .nav-link{
+    justify-content: flex-start;
+    display: flex;
+    margin: 0% 5px;
+    margin-left: 0;
+    top: 10;
+    text-decoration: none;
+      color: black;
+      font-size: 1.1em;
+      font-family: Helvetica;
+  }
+  .nav-link:hover{
+    color: #F97B22
+  }
+  #nav-bar li:first-child {
+    margin-left: 20;
+  }
+  #nav-bar li:last-child{
+    margin-right: -10;
+  }
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 7vh;
+    background-color: #f8f8f8;
+    z-index: 9999; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  #header-img{
+    display: flex;
+    margin: 0 2%;
+    margin-left: 1%;
+    margin-top: 10%;
+    width: 45%;
+  }
+  .header-brand{
+    display: inline;
+    font-family: Helvetica;
+    margin-left: 8%;
+    margin-right: 0;
+    margin-top: 10% ;
+    font-size: 1em;
+    color: #000000;
+  }
+  #home{
+    margin-top: 0%;
+    padding-top: 0%;
+    display: flex;
+    position: relative;
+    top: 0px;
+    width: 100vw;
+    height: 40vh;
+    background-color: #FCC8D1;
+  }
+  #home-img{
+    display: absolute;
+    width: 60vw;
+    height: auto;
+    opacity: 0;
+    transform: translateX(30px);
+    animation: fadeHome 1.5s ease forwards;
+  }
+  @keyframes fadeHome {
+    0% {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .home-image{
+    margin-top: 10;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .about-product{
+    flex: 2;
+    color: black;
+    font-size: 1.1em;
+    font-family: Dealoras;
+    margin: 10% 5% 10% 5%;
+  }
+  .home-a{
+    text-decoration: none;
+    color: #FEE8B0;
+    font-family: Helvetica;
+    font-size: 1.1em;
+  }
+  .home-p{
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  .slogan-1{
+    padding-top: 0%;
+    margin: 5% 0% 15% 0%;
+    font-size: 1.8em;
+  }
+  .slogan-2{
+    font-size: 1.8em;
+  }
+  hr{
+    width: 100%;
+    border-color: #000000;
+  }
+  .hr1{
+    position: relative;
+    top: 8px;
+    width: 100%;
+    border-color: #000000;
+  }
+  .hr2{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    border-color: #000000;
+  }
+
+  #quotes{
+    background-color: #FCC8D1;
+    margin: 10 0 0 0;
+    padding: 3 20 20 20;
+  }
+  #quotes p{
+    font-family: font-2;
+    font-size: 1em;
+    text-align: justify;
+  }
+
+  #gallery {
+    text-align: center;
+    background-color: #FCC8D1;
+    margin-top: 10px;;
+  }
+  #gallery h2{
+    font-size: 1.9em;
+    font-family: font-2;
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .gallery-item {
+    width: calc(50% - 20px);
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease forwards;
+  }
+  
+  .gallery-item img {
+    width: 130px;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid black;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .wishes-text{
+    margin: 20 0 0 0;
+    padding: 0;
+  }
+  .wishes-text p{
+    margin: 20 10 10 20;
+    font-family: font-3;
+    font-size: 1.6em;
+  }
+  .wishes-text h2 {
+    text-align: center;
+    font-family: font-2;
+    font-size: 2em;
+  }
